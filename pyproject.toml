@@ -5,3 +5,6 @@ description = "Data and code collection for the paper: Mirror Quantum Awesomenes
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
+
+[tool.uv]
+package = false # so that uv won't treat this repository as a package.
