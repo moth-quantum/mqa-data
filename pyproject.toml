@@ -4,7 +4,19 @@ version = "0.1.0"
 description = "Data and code collection for the paper: Mirror Quantum Awesomeness"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "ipykernel>=7.3.0",
+    "matplotlib>=3.4",
+    "networkx>=3.6.1",
+    "numpy>=1.17",
+    "pandas>=3.0.3",
+    "qiskit>=2.0",
+    "qiskit-aer>=0.17.2",
+    "qiskit-experiments==0.10.0",
+    "qiskit-ibm-runtime>=0.28",
+    "rustworkx>=0.17.1",
+    "scipy>=1.4",
+]
 
 [tool.uv]
 package = false # so that uv won't treat this repository as a package.
