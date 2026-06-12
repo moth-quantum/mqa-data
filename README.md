@@ -1,17 +1,15 @@
 # Mirror Quantum Awesomeness
 
-__One Paragraph+__ describing the project goes here. For example: This is a README template you would use to describe a scientific or data analysis project. Provide an overview of the goals of the project, how data was obtained, and other important details others or you in 6 months should be aware of.
+Quantum processing units now routinely exceed 100 qubits, but scalable performance assessment remains challenging, particularly for guiding near-term algorithms. Mirror Randomized Benchmarking provides one way to estimate QPU-scale fidelity by using randomized mirror circuits with Pauli twirls and state preparations, yielding average-layer infidelity via the exponential decay of the effective polarization. However, a primary disadvantage of this approach is the extensive sampling overhead that arises as system size increases. To address this, a novel variant of Mirror Randomized Benchmarking (MRB) is introduced in which circuits generate a set of entangled pairs rather than returning a single bit string. This modification allows the extraction of the same metrics as standard MRB while enabling alternative analyses with constant overhead, providing deeper insights into the performance of near-term quantum algorithms.
 
 ## Data
 
-Describe the dataset in more detail here if necessary
+Experiments on IBM Quantum hardware with over 100 qubits are used to validate and test the method, as well as to benchmark the hardware. Plus, simulation on custom error model on the custom coupling map is also used.
 
 __Data Contact__
 
-List a data contact that can be contacted for inqueries regarding archiving and/or removal of data. Two methods of contact should be left, including one that is outside / external to the current institution.
-
-* **Daniel E. Cook <astryd@mothquantum.com>** - Contact for inqueries regarding GitHub repository.
-* __Expiration Date__ -  YYYYMMDD - Data can be (deleted | archived) <-- choose one
+* **Haripriya Pettugani <priya@mothquantum.com>** and **María Aguado-Yáñez <maria@mothquantum.com** - Contact for inqueries regarding `ibm_fez` data and MQA metrics
+* **Astryd Park <astryd@mothquantum.com>** - Contact for inqueries regarding Topological analysis and GitHub repository
 
 Most scripts / analysis can be left as they often do not take up substantial amounts of space, so it is important to describe in detail how data should be handled.
 
@@ -23,7 +21,7 @@ Most scripts / analysis can be left as they often do not take up substantial amo
 git clone https://github.com/moth-quantum/mqa-data.git
 ```
 
-Then, run this command in the repository's local location to set up the virtual environment, and install all dependencies.
+Then, run this command in the repository's local location to set up the virtual environment, and install all dependencies. If uv is not installed, this command will install it for you. (Just in case, after installation, run this once more.)
 
 ```
 uv sync
@@ -49,7 +47,7 @@ End with an example of getting some data out of the system or using. It is also 
 
 ## Publications
 
-List references with links to publications this analysis was used for.
+Add ArXiv link underneath!
 
  __The genetic basis of natural variation in Caenorhabditis elegans telomere length__<br />
 Cook DE, Zdraljevic S, Tanny RE, Seo B, Riccardi DD, Noble LM, Rockman MV, Alkema MJ, Braendle C, Kammenga JE, Wang J, Kruglyak L, Fe ́ lix MA, Lee J, Andersen EC. <br />
