@@ -1306,7 +1306,7 @@ requires-dist = [
     { name = "pandas", specifier = ">=3.0.3" },
     { name = "qiskit", specifier = ">=2.0" },
     { name = "qiskit-aer", specifier = ">=0.17.2" },
-    { name = "qiskit-experiments", specifier = "==0.10.0" },
+    { name = "qiskit-experiments", specifier = ">=0.13.0" },
     { name = "qiskit-ibm-runtime", specifier = ">=0.28" },
     { name = "rustworkx", specifier = ">=0.17.1" },
     { name = "scipy", specifier = ">=1.4" },
@@ -2207,7 +2207,7 @@ wheels = [
 
 [[package]]
 name = "qiskit-experiments"
-version = "0.10.0"
+version = "0.14.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "lmfit" },
@@ -2216,36 +2216,14 @@ dependencies = [
     { name = "packaging" },
     { name = "pandas" },
     { name = "qiskit" },
-    { name = "qiskit-ibm-experiment" },
     { name = "qiskit-ibm-runtime" },
     { name = "rustworkx" },
     { name = "scipy" },
     { name = "uncertainties" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/34/10/a440f5565e5844c186ef1f17574c3f5325a72e3a6e41e4d8e56f66ad26e1/qiskit_experiments-0.10.0.tar.gz", hash = "sha256:b2da7ac0e96a2d2a77576b71bcac0b5c8d9dc066b0e26ddda458d11676693379", size = 756960, upload-time = "2025-04-03T14:41:30.159Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a3/d1/f783e00a6657beea49ff026afe0d795b60ca72fcaa2471c29df59109c817/qiskit_experiments-0.14.1.tar.gz", hash = "sha256:5b09ec6c293b036b036a892dd73a025716f3832a48ce12bd3d78544a35c63fec", size = 770489, upload-time = "2026-06-02T02:25:26.708Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/04/7d/35fc29c470476a2fb567ac252e2f781790fd60727b4ed489504cb9a800da/qiskit_experiments-0.10.0-py3-none-any.whl", hash = "sha256:da4d5238148cf2ec9d27c071a2ec34cd33b2983d397eb302ad77f54378d5f32a", size = 633406, upload-time = "2025-04-03T14:41:28.248Z" },
-]
-
-[[package]]
-name = "qiskit-ibm-experiment"
-version = "0.4.8"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "numpy" },
-    { name = "pandas" },
-    { name = "python-dateutil" },
-    { name = "pyyaml" },
-    { name = "qiskit" },
-    { name = "requests" },
-    { name = "requests-ntlm" },
-    { name = "typing-extensions" },
-    { name = "urllib3" },
-    { name = "websocket-client" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/b8/70/41affde88704599bf7bc36cf66b51ed5d1983b9632e646fedc6ef4760a6c/qiskit-ibm-experiment-0.4.8.tar.gz", hash = "sha256:f5866b63fde3247008c578286b8bf5a61493e0d9839467f0d1fcfa24f45a9077", size = 66303, upload-time = "2024-09-05T13:25:54.569Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/6a/81/82966b0d9703a1c4732b48953510179b2baaacac31e0eb7e5c29a63d4eb7/qiskit_ibm_experiment-0.4.8-py3-none-any.whl", hash = "sha256:0924fff8de7f86a6fbf77895bda467840450cbc721b114de709cc45071bfc4b5", size = 57300, upload-time = "2024-09-05T13:25:52.576Z" },
+    { url = "https://files.pythonhosted.org/packages/c7/8e/56943d9b1527474474188808fbbc405183d2621ef5cb6be6c676da552dac/qiskit_experiments-0.14.1-py3-none-any.whl", hash = "sha256:35d68403d9dc76c9d1603d93de1b413846562d6447bf00f6cdd396347584023d", size = 651113, upload-time = "2026-06-02T02:25:24.969Z" },
 ]
 
 [[package]]

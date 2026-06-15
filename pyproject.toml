@@ -13,7 +13,7 @@ dependencies = [
     "pandas>=3.0.3",
     "qiskit>=2.0",
     "qiskit-aer>=0.17.2",
-    "qiskit-experiments==0.10.0",
+    "qiskit-experiments>=0.13.0",
     "qiskit-ibm-runtime>=0.28",
     "rustworkx>=0.17.1",
     "scipy>=1.4",
