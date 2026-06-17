@@ -8,7 +8,7 @@ Experiments on IBM Quantum hardware with over 100 qubits are used to validate an
 
 __Data Contact__
 
-* **Haripriya Pettugani <priya@mothquantum.com>** and **María Aguado-Yáñez <maria@mothquantum.com** - Contact for inqueries regarding `ibm_fez` data and MQA metrics
+* **Haripriya Pettugani <priya@mothquantum.com>** and **María Aguado-Yáñez <maria@mothquantum.com>** - Contact for inqueries regarding `ibm_fez` data and MQA metrics
 * **Astryd Park <astryd@mothquantum.com>** - Contact for inqueries regarding Topological analysis and GitHub repository
 
 If one wants to use live QPU data, they must use their **IBM Quantum Platform** API key, CRN and their username in `tmqa-hardware.ipynb`. The way of getting this information can be referenced in the official website.
