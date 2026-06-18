@@ -38,7 +38,7 @@ Pettugani, H, Aguado-Yáñez M, Park A, Bultrini D, Wootton James R. <br />
 ## Authors
 
 * **Haripriya Pettugani** - [GitHub](https://github.com); priya@mothquantum.com
-* **Maria Aguado-Yáñez** - [GitHub](https://github.com); maria@mothquantum.com
+* **María Aguado-Yáñez** - [GitHub](https://github.com); [LinkedIn](https://www.linkedin.com/in/mariaaguadoyan/); maria@mothquantum.com
 * **Astryd Park** - [GitHub](https://github.com/artreadcode); [LinkedIn](https://linkedin.com/in/astrydpark); astryd@mothquantum.com
 * **Daniel Bultrini** - [GitHub](https://github.com); daniel@mothquantum.com
 * **James R. Wootton** - [GitHub](https://github.com/quantumjim); james@mothquantum.com
