@@ -15,13 +15,15 @@ If one wants to use live QPU data, they must use their **IBM Quantum Platform** 
 
 ## Requirements
 
-`uv` is required to install code dependencies to your system and run the code locally. To accomplish it, you must clone this repository on your local first.
+1. `uv` is required to install code dependencies to your system and run the code locally. To accomplish it, you must clone this repository on your local first.
 
 ```
 git clone https://github.com/moth-quantum/mqa-data.git
 ```
 
-Then, run this command in the repository's local location to set up the virtual environment, and install all dependencies. If uv is not installed, this command will install it for you. (Just in case, after installation, run this once more.)
+2. Install `uv` [here](https://docs.astral.sh/uv/getting-started/installation/) while following the steps.
+
+3. Then, run this command **in the repository's local location** to set up the virtual environment, and install all dependencies.
 
 ```
 uv sync
@@ -32,16 +34,18 @@ uv sync
 **Update ArXiv link underneath!**
 
  __QPU-scale randomized benchmarking via Bell-pair injection__<br />
-Pettugani, H, Aguado-Yáñez M, Park A, Bultrini D, Wootton James R. <br />
-2026 {This is a placeholder data > Genetics 204:371–383. DOI: https://doi.org/10.1534/genetics.116. 191148, PMID: 27449056}
+Pettugani, H^, Aguado-Yáñez M^, Park A^, Bultrini D, Wootton James R. <br />
+2026 ArXiv Preprint. DOI: https://doi.org/10.48550/arXiv.2606.20123
 
 ## Authors
 
-* **Haripriya Pettugani** - [GitHub](https://github.com); priya@mothquantum.com
-* **María Aguado-Yáñez** - [GitHub](https://github.com); [LinkedIn](https://www.linkedin.com/in/mariaaguadoyan/); maria@mothquantum.com
-* **Astryd Park** - [GitHub](https://github.com/artreadcode); [LinkedIn](https://linkedin.com/in/astrydpark); astryd@mothquantum.com
+* **Haripriya Pettugani** - [GitHub](https://github.com); priya@mothquantum.com ^
+* **María Aguado-Yáñez** - [GitHub](https://github.com); [LinkedIn](https://www.linkedin.com/in/mariaaguadoyan/); maria@mothquantum.com ^
+* **Astryd Park** - [GitHub](https://github.com/artreadcode); [LinkedIn](https://linkedin.com/in/astrydpark); astryd@mothquantum.com ^
 * **Daniel Bultrini** - [GitHub](https://github.com); daniel@mothquantum.com
 * **James R. Wootton** - [GitHub](https://github.com/quantumjim); james@mothquantum.com
+
+^ Haripriya Pettugani, María Aguado-Yáñez and Astryd Park contributed equally to this work.
 
 ## License
 
@@ -50,4 +54,4 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE.txt](LI
 ## Acknowledgments
 
 * The original MRB work in `qiskit_device_benchmarking` library:
-  Portions of the code in this repository was developed via sponsorship by the Army Research Office ``QCISS Program'' under Grant Number W911NF-21-1-0002. 
+  Portions of the code in this repository was developed via sponsorship by the Army Research Office ''QCISS Program'' under Grant Number W911NF-21-1-0002. 
