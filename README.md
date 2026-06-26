@@ -34,7 +34,7 @@ uv sync
 **Update ArXiv link underneath!**
 
  __QPU-scale randomized benchmarking via Bell-pair injection__<br />
-Pettugani, H^, Aguado-Yáñez M^, Park A^, Bultrini D, Wootton James R. <br />
+Pettugani, H†, Aguado-Yáñez M†, Park A†, Bultrini D, Wootton James R. <br />
 2026 ArXiv Preprint. DOI: https://doi.org/10.48550/arXiv.2606.20123
 
 ## Authors
@@ -45,7 +45,7 @@ Pettugani, H^, Aguado-Yáñez M^, Park A^, Bultrini D, Wootton James R. <br />
 * **Daniel Bultrini** - [GitHub](https://github.com); daniel@mothquantum.com
 * **James R. Wootton** - [GitHub](https://github.com/quantumjim); james@mothquantum.com
 
-^ Haripriya Pettugani, María Aguado-Yáñez and Astryd Park contributed equally to this work.
+† Haripriya Pettugani, María Aguado-Yáñez and Astryd Park contributed equally to this work.
 
 ## License
 
@@ -53,5 +53,8 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE.txt](LI
 
 ## Acknowledgments
 
-* The original MRB work in `qiskit_device_benchmarking` library:
-  Portions of the code in this repository was developed via sponsorship by the Army Research Office ''QCISS Program'' under Grant Number W911NF-21-1-0002. 
+This work was supported as a part of NCCR SPIN, a National Centre of Competence in Research, funded by the Swiss National Science Foundation (grant number 225153).
+
+The authors acknowledge the use of IBM Quantum Credits via the IBM Quantum Startups Program for this work. The views expressed are those of the authors and do not reflect the official policy or position of IBM or the IBM Quantum Platform team.
+
+This repository includes the Moth fork of `qiskit_device_benchmarking` library available [here](https://github.com/moth-quantum/qiskit-device-benchmarking/tree/main). This is derived from the qiskit-community version [here](https://github.com/qiskit-community/qiskit-device-benchmarking).
