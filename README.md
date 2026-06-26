@@ -1,4 +1,6 @@
-# Mirror Quantum Awesomeness
+# Mirror Quantum Awesomeness [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20928060.svg)](https://doi.org/10.5281/zenodo.20928060)
+
+
 
 Mirror randomized benchmarking (MRB) is an established technique that provides a global error metric at the scale of a whole QPU. To expand upon this we introduce Mirror Quantum Awesomeness (MQA), a hybrid protocol that adds a structured entangling layer to MRB circuits. This enables per-edge correlation dynamics to be tracked via mutual information while preserving the MRB infidelity estimate. The resulting analysis of the injected entangled pairs locates a critical circuit depth, beyond which rudimentary error mitigation techniques can be expected to fail. A topological variant, Topological MQA, supplies a second critical depth via a decoder based on the surface-code decoding problem. Both are validated in simulation and demonstrated on the 156-qubit ibm fez and ibm kingston processors, where MQA closely agrees with MRB on the entanglement infidelity and the critical depth for ibm fez is found to be ∼ 50.
 
