@@ -72,9 +72,14 @@ def fez_30_coupling_map() -> CouplingMap:
 
 
 def chain(n: int) -> CouplingMap:
-    """Bidirectional linear chain 0-1-...-(n-1)."""
-    edges = [(i, i + 1) for i in range(n - 1)]
-    return CouplingMap(couplinglist=edges + [(b, a) for a, b in edges])
+    """Bidirectional linear chain 0-1-...-(n-1), interleaved as (i, i+1), (i+1, i).
+
+    Edge order feeds the circuit sampler's RNG draws, so it must match the notebooks.
+    """
+    edges = []
+    for i in range(n - 1):
+        edges += [(i, i + 1), (i + 1, i)]
+    return CouplingMap(couplinglist=edges)
 
 
 def complete(n: int) -> CouplingMap:
