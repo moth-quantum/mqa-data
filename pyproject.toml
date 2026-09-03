@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "ipykernel>=7.3.0",
     "jupyter>=1.1.1",
+    "marimo>=0.24.0",
     "matplotlib>=3.4",
     "networkx>=3.6.1",
     "numpy>=1.17",
@@ -19,5 +20,9 @@ dependencies = [
     "scipy>=1.4",
 ]
 
-[tool.uv]
-package = false # so that uv won't treat this repository as a package.
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["qiskit_device_benchmarking", "mqa_common"]

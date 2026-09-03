@@ -217,3 +217,8 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 .DS_Store
+
+# marimo notebook outputs / local run artifacts
+runs/
+topo_ckpt/
+.marimo-html/
