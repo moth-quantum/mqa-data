@@ -1,0 +1,42 @@
+version: "3"
+
+vars:
+  IMG: mqa-notebooks
+
+tasks:
+  sync:
+    desc: Install dependencies into .venv
+    cmds:
+      - uv sync
+
+  edit:
+    desc: Open the marimo notebooks in the editor
+    cmds:
+      - uv run marimo edit notebooks/
+
+  check:
+    desc: Lint the marimo notebooks
+    cmds:
+      - uv run marimo check --strict notebooks/
+
+  export:
+    desc: Lint and run every notebook headlessly on the host (HTML under .marimo-html/)
+    cmds:
+      - uv run scripts/check_notebooks.sh .marimo-html
+
+  docker:build:
+    desc: Build the notebook test image
+    cmds:
+      - docker build -t {{.IMG}} .
+
+  docker:test:
+    desc: Run every notebook inside the container with networking disabled
+    deps: [docker:build]
+    cmds:
+      - docker run --rm --network none -e SMOKE=1 {{.IMG}}
+
+  test:
+    desc: Lint on the host, then the container run
+    deps: [check]
+    cmds:
+      - task: docker:test

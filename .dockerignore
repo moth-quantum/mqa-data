@@ -1,0 +1,11 @@
+.git
+.venv
+.claude
+**/__pycache__
+**/__marimo__
+*.ipynb
+ibm_fez&ibm_kingston/
+ibm_miami/*/circuit_*.json
+runs/
+topo_ckpt/
+.marimo-html/
