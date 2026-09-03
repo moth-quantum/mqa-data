@@ -31,6 +31,34 @@ git clone https://github.com/moth-quantum/mqa-data.git
 uv sync
 ```
 
+## Notebooks (marimo)
+
+Every notebook also exists as a [marimo](https://marimo.io) notebook under `notebooks/`. Parameters are UI controls, expensive runs and hardware submissions sit behind a button, and offline data paths work without an IBM account.
+
+```
+uv sync
+uv run marimo edit notebooks/        # or: task edit
+```
+
+| Jupyter | marimo | Runs offline by default |
+|---|---|---|
+| `Comparision_EPdecay.ipynb` | `notebooks/comparison_epdecay.py` | yes (seconds) |
+| `mrb-custom.ipynb` | `notebooks/mrb_custom.py` | yes (seconds) |
+| `mqa-custom.ipynb` | `notebooks/mqa_custom.py` | button (Aer simulation) |
+| `mqa-stab.ipynb` | `notebooks/mqa_stab.py` | button (156-qubit stabilizer simulation) |
+| `mrb-stab.ipynb` | `notebooks/mrb_stab.py` | button (30-qubit stabilizer simulation) |
+| `mqa-hardware.ipynb` | `notebooks/mqa_hardware.py` | needs IBM credentials |
+| `mrb-hardware.ipynb` | `notebooks/mrb_hardware.py` | needs IBM credentials |
+| `tmqa-simul.ipynb` | `notebooks/tmqa_simul.py` | button (hours); checkpoints in `topo_ckpt/` |
+| `tmqa-fake.ipynb` | `notebooks/tmqa_fake.py` | yes (loads `FakeMiami/*.pkl`); re-run behind a button |
+| `tmqa-hardware.ipynb` | `notebooks/tmqa_hardware.py` | yes (loads `ibm_miami/*/*_data.pkl`); live run needs credentials |
+| `CustomNoisyBackend/.../noisy-backend-angle-graph.ipynb` | `notebooks/noisy_backend_angle_graph.py` | yes |
+| `StabilizerBackend/.../error_rates_graph.ipynb` | `notebooks/stab_error_rates_graph.py` | yes |
+
+IBM credentials are entered in a password field inside the hardware notebooks and used for that session only; nothing is written to `~/.qiskit`. Anything a notebook saves goes under `runs/` (git-ignored). Shared helpers live in `mqa_common/`.
+
+`task docker:test` builds an image and runs every notebook headlessly with networking disabled, which is the check that they open and execute.
+
 ## Publications
 
 **Update ArXiv link underneath!**
