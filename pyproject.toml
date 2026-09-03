@@ -12,6 +12,7 @@ dependencies = [
     "networkx>=3.6.1",
     "numpy>=1.17",
     "pandas>=3.0.3",
+    "pylatexenc>=2.11",
     "qiskit>=2.0",
     "qiskit-aer>=0.17.2",
     "qiskit-experiments>=0.13.0",
