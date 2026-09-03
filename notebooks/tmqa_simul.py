@@ -179,7 +179,6 @@ def _(
     shots,
     sizes,
 ):
-    CKPT.mkdir(exist_ok=True)
     cached = {}
     for _n in sizes:
         _ckpt = ckpt_path(CKPT, **ckpt_key(_n, p1, p2, shots, num_samples, lengths, SEED))
@@ -254,6 +253,7 @@ def _(
         results[n] = evaluate_bot(_mi, _exp, _legit, _num_qubits, lengths)
         results[n]["params"] = ckpt_key(n, p1, p2, shots, num_samples, lengths, SEED)
         _ckpt = ckpt_path(CKPT, **results[n]["params"])
+        _ckpt.parent.mkdir(exist_ok=True)
         _ckpt.write_bytes(pickle.dumps(results[n]))
         log.append(f"{n}x{n}: ran {len(_exp._pairs)} circuits, saved {_ckpt.name}")
         del _exp, _rb, _mi, _backend
