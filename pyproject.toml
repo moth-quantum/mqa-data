@@ -5,8 +5,8 @@ description = "Data and code collection for the paper: Mirror Quantum Awesomenes
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "ipykernel>=7.3.0",
-    "jupyter>=1.1.1",
+    # "ipykernel>=7.3.0",
+    # "jupyter>=1.1.1",
     "matplotlib>=3.4",
     "networkx>=3.6.1",
     "numpy>=1.17",
@@ -17,6 +17,12 @@ dependencies = [
     "qiskit-ibm-runtime>=0.28",
     "rustworkx>=0.17.1",
     "scipy>=1.4",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "jupyter>=1.1.1",
 ]
 
 # Now the library side of the code should be exposed as a package
