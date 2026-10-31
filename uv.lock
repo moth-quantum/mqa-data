@@ -1282,8 +1282,6 @@ name = "mqa-data"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
-    { name = "ipykernel" },
-    { name = "jupyter" },
     { name = "matplotlib" },
     { name = "networkx" },
     { name = "numpy" },
@@ -1296,10 +1294,14 @@ dependencies = [
     { name = "scipy" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+    { name = "jupyter" },
+]
+
 [package.metadata]
 requires-dist = [
-    { name = "ipykernel", specifier = ">=7.3.0" },
-    { name = "jupyter", specifier = ">=1.1.1" },
     { name = "matplotlib", specifier = ">=3.4" },
     { name = "networkx", specifier = ">=3.6.1" },
     { name = "numpy", specifier = ">=1.17" },
@@ -1310,6 +1312,12 @@ requires-dist = [
     { name = "qiskit-ibm-runtime", specifier = ">=0.28" },
     { name = "rustworkx", specifier = ">=0.17.1" },
     { name = "scipy", specifier = ">=1.4" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "ipykernel", specifier = ">=7.3.0" },
+    { name = "jupyter", specifier = ">=1.1.1" },
 ]
 
 [[package]]
